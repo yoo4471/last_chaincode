@@ -656,7 +656,7 @@ func (t *PS) search_tran(stub shim.ChaincodeStubInterface, args []string) ([]byt
 	var ret string
 	tra := TradeRec{}
 	for i, v := range tt {
-		if v == 38 {
+		if v == 47 {
 			end = i
 			if tt[start:end] != "" {
 				valAsbytes, _ := stub.GetState(tt[start:end])
